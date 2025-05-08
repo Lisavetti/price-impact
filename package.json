@@ -1,0 +1,22 @@
+{
+  "name": "price-impact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "btc": "npx playwright test tests/btc-usdt.spec.js --project=chromium",
+    "eth": "npx playwright test tests/eth-usdt.spec.js --project=chromium",
+    "pepe": "npx playwright test tests/pepe-usdt.spec.js --project=chromium",
+    "doge": "npx playwright test tests/doge-usdt.spec.js --project=chromium",
+    "binance_info" : "node tests/binance_qty.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.0"
+  },
+  "dependencies": {
+    "axios": "^1.8.4"
+  }
+}
